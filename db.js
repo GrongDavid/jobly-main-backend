@@ -7,7 +7,7 @@ let db
 
 if (process.env.NODE_ENV === 'production') {
 	db = new Client({
-		host: 'dpg-cgfohgm4daddcg0r0oig-a/jobly_7zwz',
+		host: process.env.HOST_ENV,
 		port: 5432,
 		user: 'jobly_7zwz_user',
 		password: DB_PASSWORD,
