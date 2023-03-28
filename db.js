@@ -9,6 +9,7 @@ if (process.env.NODE_ENV === 'production') {
 	db = new Client({
 		host: process.env.HOST_ENV,
 		port: 5432,
+		database: 'jobly_7zwz',
 		user: 'jobly_7zwz_user',
 		password: DB_PASSWORD,
 		ssl: {
